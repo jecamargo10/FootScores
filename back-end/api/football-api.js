@@ -27,6 +27,14 @@ module.exports.getCompetitionName = getCompetitionName;
 /************************************************
   API REQUESTS (football-data.org)
 ************************************************/
+
+
+//Javier Camargo: Segun las mejroes practicas para el manejo de errores: A common mistake for beginners is to try to use throw inside a Node.js  callback
+//Es mucho mejor que para callback informe el error
+// Por recomendacion es mejor utilizar return para los callback asi finalizas el flujo ya sea por error o por exito en la funcion
+//No seria deseable conocer el statusCode ?
+
+
 // Get all matches happening in the upcoming week from a certain competition(s)
 module.exports.getMatchesByCompetition = function(id, callback) {
   var options = config.options;
