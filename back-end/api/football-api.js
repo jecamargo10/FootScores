@@ -52,6 +52,7 @@ module.exports.getMatchesWeekBefore = function(callback) {
     }
   });
 };
+// Por la estructura del programa, tiene sentido esta consulta ?
 
 // Get all the matches happening in the upcoming week, all competitions
 module.exports.getMatchesNextWeek = function(callback) {
