@@ -1,3 +1,4 @@
+//Tambien retornan el callback, falta el manejo de errores, al menos un catch
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
