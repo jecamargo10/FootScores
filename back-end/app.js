@@ -1,4 +1,8 @@
 'use strict';
+//Strict tiene algun valro en el back ?
+// Javier Camargo: Muy bien comentar cada seccion del codigo, tanto las librerias como cada modulo
+
+
 /************************************************
   REQUIRE NPM PACKAGES
 ************************************************/
