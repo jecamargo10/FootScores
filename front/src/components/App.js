@@ -39,7 +39,8 @@ const loginStyle={
 };
 
 class App extends Component {
-
+// Seria deseable manejo de errores y algun tipo de notificacion al usuario final
+  
   constructor(props) {
     axios.get(URL+"/users/leaderboard").then(response => {
       this.setState({
@@ -154,7 +155,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* <p>{this.state.token || 'No hay token'}</p> */}
+        {/* Esta lina pudo ser util, interesante el manejo de sesioens y de token<p>{this.state.token || 'No hay token'}</p> */}
         <Modal
           isOpen={this.state.signupModalOpen}
           contentLabel='Sign up'
