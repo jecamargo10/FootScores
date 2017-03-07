@@ -1,6 +1,8 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
+//Vale la pena tener todas las competiciones guardadas en base de datos ?
+
 var Competition = mongoose.model('Competition', new Schema({
   id: {type: Number, unique: true, required: true},
   league: {type: String, unique: true, required: true},
@@ -9,6 +11,8 @@ var Competition = mongoose.model('Competition', new Schema({
 }));
 
 module.exports = Competition;
+
+//En estas funciones si estan retornando el callback 
 
 // Find all competitions
 module.exports.getCompetitions = function(callback) {
